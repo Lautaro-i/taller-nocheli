@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="es">
 <head>
   <meta charset="utf-8" />
@@ -7,87 +6,77 @@
   <title>Taller Nocheli — Chapa y Pintura</title>
   <meta name="description" content="Taller Nocheli - Chapa y pintura. San Luis, Argentina. Lunes a Viernes de 09:00 - 18:00. Contacto: +54 266 501 7778" />
 
+  <!-- Verificación de Google Search Console (tu código) -->
+  <meta name="google-site-verification" content="bR5GVLW0_yjIj5hJB0Xx4y47yfapOQbo7J8cY1j8Dw8" />
 
-  <!-- META para que Google indexe -->
+  <!-- Permitir indexación -->
   <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
 
-  <!-- Open Graph para que aparezca bien en Google y redes -->
+  <!-- Open Graph / redes -->
   <meta property="og:title" content="Taller Nocheli — Chapa y Pintura" />
   <meta property="og:description" content="Reparación de carrocería, pintura automotriz y restauraciones en San Luis, Argentina." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://lautaro-i.github.io/taller-nocheli" />
   <meta property="og:image" content="https://lautaro-i.github.io/taller-nocheli/imagen.jpg" />
-  
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://lautaro-i.github.io/taller-nocheli/" />
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --blue:#0b63d4; /* color principal */
+      --blue:#0b63d4;
       --white:#ffffff;
       --muted:#6b7280;
       --maxwidth:1100px;
     }
     *{box-sizing:border-box}
-
     body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#111;background:var(--white);-webkit-font-smoothing:antialiased}
     a{color:inherit;text-decoration:none}
-    .container{max-width:var(--maxwidth);margin:0 auto;padding:0 20px}/* Header */
-header{border-bottom:1px solid #e6eefc;background:linear-gradient(180deg, rgba(11,99,212,0.05), transparent);}
-.top{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-.brand{display:flex;align-items:center;gap:12px}
-.logo{font-family:Montserrat,Inter, sans-serif;font-weight:700;color:var(--blue);font-size:22px}
-.tagline{font-size:12px;color:var(--muted)}
-.contact{display:flex;gap:12px;align-items:center}
-.pill{background:var(--blue);color:white;padding:8px 12px;border-radius:8px;font-weight:600;display:inline-flex;gap:8px;align-items:center}
-.pill svg{width:18px;height:18px}
-
-/* Hero */
-.hero{padding:36px 0 12px}
-.hero-grid{display:grid;grid-template-columns:1fr 520px;gap:28px;align-items:center}
-.hero h1{font-family:Montserrat,Inter;font-size:40px;margin:0;color:var(--blue)}
-.hero p{color:var(--muted);margin:12px 0 18px;font-size:16px}
-.cta-row{display:flex;gap:12px;align-items:center}
-.btn{padding:12px 18px;border-radius:10px;border:0;font-weight:600;cursor:pointer}
-.btn-primary{background:var(--blue);color:white}
-.btn-outline{background:transparent;border:2px solid var(--blue);color:var(--blue)}
-
-/* Showcase / Portón */
-.showcase{position:relative;height:60vh;min-height:360px;background:#000;border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(11,99,212,0.08)}
-.panorama{height:100%;width:100%;position:relative;overflow:hidden;touch-action:none;background:#111}
-.panorama img{height:100%;position:absolute;left:0;top:0;user-select:none;pointer-events:none}
-
-/* Portón (dos puertas) */
-.gate{position:absolute;top:0;bottom:0;width:50%;background:linear-gradient(180deg,var(--blue),#0a4aa0);z-index:20;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.9);font-weight:700}
-.gate.left{left:0;border-right:1px solid rgba(255,255,255,0.06)}
-.gate.right{right:0;border-left:1px solid rgba(255,255,255,0.06)}
-.porton.open .gate.left{transform:translateX(-105%);transition:transform 1s cubic-bezier(.2,.9,.2,1)}
-.porton.open .gate.right{transform:translateX(105%);transition:transform 1s cubic-bezier(.2,.9,.2,1)}
-.gate .hint{font-size:18px;letter-spacing:1px}
-
-/* Small controls */
-.panorama-controls{position:absolute;left:12px;bottom:12px;z-index:30;display:flex;gap:8px}
-.small{background:rgba(255,255,255,0.95);padding:8px 10px;border-radius:8px;font-weight:600}
-
-/* Sections */
-section{padding:36px 0}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#fbfcff;padding:18px;border-radius:10px;border:1px solid #eef4ff}
-.card h4{margin:6px 0}
-.muted{color:var(--muted)}
-
-/* Contact / map */
-.contact-grid{display:grid;grid-template-columns:1fr 420px;gap:20px}
-iframe{width:100%;border:0;height:300px;border-radius:10px}
-
-footer{padding:22px 0;color:var(--muted);font-size:14px;border-top:1px solid #eef4ff}
-
-/* Responsive */
-@media (max-width:980px){
-  .hero-grid{grid-template-columns:1fr}
-  .contact-grid{grid-template-columns:1fr}
-  .cards{grid-template-columns:1fr}
-  .panorama img{left:0}
-}
-
+    .container{max-width:var(--maxwidth);margin:0 auto;padding:0 20px}
+    header{border-bottom:1px solid #e6eefc;background:linear-gradient(180deg, rgba(11,99,212,0.05), transparent);}
+    .top{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{font-family:Montserrat,Inter, sans-serif;font-weight:700;color:var(--blue);font-size:22px}
+    .tagline{font-size:12px;color:var(--muted)}
+    .contact{display:flex;gap:12px;align-items:center}
+    .pill{background:var(--blue);color:white;padding:8px 12px;border-radius:8px;font-weight:600;display:inline-flex;gap:8px;align-items:center}
+    .pill svg{width:18px;height:18px}
+    .hero{padding:36px 0 12px}
+    .hero-grid{display:grid;grid-template-columns:1fr 520px;gap:28px;align-items:center}
+    .hero h1{font-family:Montserrat,Inter;font-size:40px;margin:0;color:var(--blue)}
+    .hero p{color:var(--muted);margin:12px 0 18px;font-size:16px}
+    .cta-row{display:flex;gap:12px;align-items:center}
+    .btn{padding:12px 18px;border-radius:10px;border:0;font-weight:600;cursor:pointer}
+    .btn-primary{background:var(--blue);color:white}
+    .btn-outline{background:transparent;border:2px solid var(--blue);color:var(--blue)}
+    .showcase{position:relative;height:60vh;min-height:360px;background:#000;border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(11,99,212,0.08)}
+    .panorama{height:100%;width:100%;position:relative;overflow:hidden;touch-action:none;background:#111}
+    .panorama img{height:100%;position:absolute;left:0;top:0;user-select:none;pointer-events:none}
+    .gate{position:absolute;top:0;bottom:0;width:50%;background:linear-gradient(180deg,var(--blue),#0a4aa0);z-index:20;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.9);font-weight:700}
+    .gate.left{left:0;border-right:1px solid rgba(255,255,255,0.06)}
+    .gate.right{right:0;border-left:1px solid rgba(255,255,255,0.06)}
+    .porton.open .gate.left{transform:translateX(-105%);transition:transform 1s cubic-bezier(.2,.9,.2,1)}
+    .porton.open .gate.right{transform:translateX(105%);transition:transform 1s cubic-bezier(.2,.9,.2,1)}
+    .gate .hint{font-size:18px;letter-spacing:1px}
+    .panorama-controls{position:absolute;left:12px;bottom:12px;z-index:30;display:flex;gap:8px}
+    .small{background:rgba(255,255,255,0.95);padding:8px 10px;border-radius:8px;font-weight:600}
+    section{padding:36px 0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fbfcff;padding:18px;border-radius:10px;border:1px solid #eef4ff}
+    .card h4{margin:6px 0}
+    .muted{color:var(--muted)}
+    .contact-grid{display:grid;grid-template-columns:1fr 420px;gap:20px}
+    iframe{width:100%;border:0;height:300px;border-radius:10px}
+    footer{padding:22px 0;color:var(--muted);font-size:14px;border-top:1px solid #eef4ff}
+    @media (max-width:980px){
+      .hero-grid{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .panorama img{left:0}
+    }
   </style>
 </head>
 <body>
@@ -104,7 +93,9 @@ footer{padding:22px 0;color:var(--muted);font-size:14px;border-top:1px solid #ee
         </a>
       </div>
     </div>
-  </header>  <main class="container">
+  </header>
+
+  <main class="container">
     <section class="hero">
       <div class="hero-grid">
         <div>
@@ -112,115 +103,103 @@ footer{padding:22px 0;color:var(--muted);font-size:14px;border-top:1px solid #ee
           <p class="muted">Reparación de carrocería, pintura automotriz y restauraciones. Vení a conocer nuestro taller: atención profesional, precios justos y trabajos garantizados.</p>
           <div class="cta-row">
             <button id="enterBtn" class="btn btn-primary">Entrar al taller</button>
-            <a class="btn btn-outline" href="https://wa.me/542665017778?text=Hola%20quiero%20arreglar%20mi%20auto%20en%20Taller%20Nocelli" target="_blank">Contactar por WhatsApp</a>
+            <a class="btn btn-outline" href="https://wa.me/542665017778?text=Hola%20quiero%20arreglar%20mi%20auto%20en%20Taller%20Nocheli" target="_blank" rel="noopener">Contactar por WhatsApp</a>
           </div>
           <p style="margin-top:14px" class="muted">Horario: Lunes a Viernes — 09:00 a 18:00</p>
-        </div><div>
-      <div class="showcase porton" id="showcase">
-        <!-- Panorama area -->
-        <div class="panorama" id="panorama">
-          <!-- Replace the image below with your 360/equirectangular panoramic photo for best effect. -->
-          <img id="panoImg" src="https://i.imgur.com/8dPHBrz.jpg" alt="Panorama del taller (reemplazar por tu imagen 360)" />
+        </div>
 
-          <!-- Portón (left + right) -->
-          <div class="gate left"><div class="hint">ENTRAR</div></div>
-          <div class="gate right"><div class="hint">ENTRAR</div></div>
-
-          <!-- Controls -->
-          <div class="panorama-controls">
-            <div class="small">Arrastrá para mirar</div>
+        <div>
+          <div class="showcase porton" id="showcase">
+            <div class="panorama" id="panorama">
+              <img id="panoImg" src="https://i.imgur.com/8dPHBrz.jpg" alt="Panorama del taller (reemplazar por tu imagen 360)" />
+              <div class="gate left"><div class="hint">ENTRAR</div></div>
+              <div class="gate right"><div class="hint">ENTRAR</div></div>
+              <div class="panorama-controls">
+                <div class="small">Arrastrá para mirar</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <section>
+      <div class="cards">
+        <div class="card">
+          <h4>Chapa</h4>
+          <p class="muted">Reparación de golpes, enderezado estructural y sustitución de piezas dañadas.</p>
+        </div>
+        <div class="card">
+          <h4>Pintura</h4>
+          <p class="muted">Pintura completa o parcial, retoques, pulido y lacado con garantía de calidad.</p>
+        </div>
+        <div class="card">
+          <h4>Restauración</h4>
+          <p class="muted">Trabajos de restauración y puesta a punto de vehículos clásicos.</p>
+        </div>
+      </div>
+    </section>
 
-<section>
-  <div class="cards">
-    <div class="card">
-      <h4>Chapa</h4>
-      <p class="muted">Reparación de golpes, enderezado estructural y sustitución de piezas dañadas.</p>
-    </div>
-    <div class="card">
-      <h4>Pintura</h4>
-      <p class="muted">Pintura completa o parcial, retoques, pulido y lacado con garantía de calidad.</p>
-    </div>
-    <div class="card">
-      <h4>Restauración</h4>
-      <p class="muted">Trabajos de restauración y puesta a punto de vehículos clásicos.</p>
-    </div>
-  </div>
-</section>
+    <section>
+      <h3>Sobre el taller</h3>
+      <p class="muted">Taller Nocheli es un centro especializado en chapa y pintura ubicado en la provincia de San Luis, Argentina. Contamos con técnicos con experiencia, equipos de secado y cabinas de pintura profesionales. Ofrecemos presupuestos personalizados y seguimiento de cada trabajo.</p>
+    </section>
 
-<section>
-  <h3>Sobre el taller</h3>
-  <p class="muted">Taller Nocheli es un centro especializado en chapa y pintura ubicado en la provincia de San Luis, Argentina. Contamos con técnicos con experiencia, equipos de secado y cabinas de pintura profesionales. Ofrecemos presupuestos personalizados y seguimiento de cada trabajo.</p>
-</section>
+    <section>
+      <h3>Contacto & Ubicación</h3>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/542665017778?text=Hola%20quiero%20arreglar%20mi%20auto%20en%20Taller%20Nocheli" target="_blank" rel="noopener">+54 266 501 7778</a></p>
+          <p><strong>Horario:</strong> Lunes a Viernes — 09:00 a 18:00</p>
+          <p><strong>Ubicación:</strong> Juan Gilberto Funes y Cordoba 0, San Luis, Provincia de San Luis, Argentina</p>
+        </div>
 
-<section>
-  <h3>Contacto & Ubicación</h3>
-  <div class="contact-grid">
-    <div>
-      <p><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/542665017778?text=Hola%20quiero%20arreglar%20mi%20auto%20en%20Taller%20Nocheli" target="_blank">+54 266 501 7778</a></p>
-      <p><strong>Horario:</strong> Lunes a Viernes — 09:00 a 18:00</p>
-      <p><strong>Ubicación:</strong> Juan Gilberto Funes y Cordoba 0, San Luis, Provincia de San Luis, Argentina</p>
-      <p class="muted"><a href=""></a></p>
-    </div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1667.339061623987!2d-66.31243165785342!3d-33.30108284698953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43f41698c5955%3A0xd14e6ce20d3da6c2!2sNOCHELI%20CHAPA%20Y%20PINTURA!5e0!3m2!1ses!2sar!4v1754853529381!5m2!1ses!2sar" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1667.339061623987!2d-66.31243165785342!3d-33.30108284698953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43f41698c5955%3A0xd14e6ce20d3da6c2!2sNOCHELI%20CHAPA%20Y%20PINTURA!5e0!3m2!1ses!2sar!4v1754853529381!5m2!1ses!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade""allowfullscreen></iframe>>
-    </div>
-  </div>
-</section>
-
-  </main>  <footer class="container">
+  <footer class="container">
     <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
       <div>© <strong>Taller Nocheli</strong> — San Luis, Argentina</div>
       <div class="muted">Diseñado y creado por Lautaro Corbalan - 2664920018</div>
     </div>
-  </footer>  <script>
+  </footer>
+
+  <script>
     document.addEventListener('DOMContentLoaded', function(){
       const enterBtn = document.getElementById('enterBtn');
       const showcase = document.getElementById('showcase');
       const panorama = document.getElementById('panorama');
       const img = document.getElementById('panoImg');
 
-      // Abrir portón al hacer click
       enterBtn.addEventListener('click', function(){
         showcase.classList.add('open');
-        // focus para accesibilidad
         panorama.focus();
       });
 
-      // Permitir abrir desde cualquier parte de la portón
       showcase.querySelectorAll('.gate').forEach(g => g.addEventListener('click', ()=> showcase.classList.add('open')));
 
-      // --- Simple viewer: arrastrar para mover la imagen horizontalmente ---
       let isDown=false, startX=0, scrollX=0;
 
       function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
 
       function update() {
-        // calcular máximo de desplazamiento según ancho de imagen
         const contW = panorama.clientWidth;
         const imgW = img.naturalWidth * (panorama.clientHeight / img.naturalHeight);
-        // si la imagen es más angosta que el contenedor, no mover
         const maxScroll = Math.max(0, imgW - contW);
-        // aplicar transform
         img.style.left = `${ -scrollX }px`;
       }
 
-      // touch/mouse handlers
       panorama.addEventListener('pointerdown', (e)=>{
         isDown = true; panorama.setPointerCapture(e.pointerId);
-        startX = e.clientX; // posición inicial
+        startX = e.clientX;
       });
       panorama.addEventListener('pointermove', (e)=>{
         if(!isDown) return;
         const dx = e.clientX - startX;
-        // calcular ancho
         const contW = panorama.clientWidth;
         const imgW = img.naturalWidth * (panorama.clientHeight / img.naturalHeight);
         const maxScroll = Math.max(0, imgW - contW);
@@ -229,20 +208,17 @@ footer{padding:22px 0;color:var(--muted);font-size:14px;border-top:1px solid #ee
         img.style.transition = 'none';
         img.style.left = `${ -scrollX }px`;
       });
-      panorama.addEventListener('pointerup', (e)=>{ isDown=false; panorama.releasePointerCapture(e.pointerId); img.style.transition='left 300ms ease';});
+      panorama.addEventListener('pointerup', (e)=>{ isDown=false; try{ panorama.releasePointerCapture(e.pointerId); }catch(e){} img.style.transition='left 300ms ease';});
       panorama.addEventListener('pointerleave', ()=>{ isDown=false; });
 
-      // ajustar al redimensionar
       window.addEventListener('resize', ()=>{
         img.style.transition='left 300ms ease';
         update();
       });
 
-      // cuando la imagen carga, la centramos
       img.addEventListener('load', ()=>{
         const contW = panorama.clientWidth;
         const imgW = img.naturalWidth * (panorama.clientHeight / img.naturalHeight);
-        // si la imagen es más ancha, centramos al medio
         if(imgW > contW){
           scrollX = Math.round((imgW - contW) / 2);
           img.style.left = `${ -scrollX }px`;
@@ -251,11 +227,10 @@ footer{padding:22px 0;color:var(--muted);font-size:14px;border-top:1px solid #ee
         }
       });
 
-      // iniciativa: intentar centrar inicialmente
       if(img.complete) img.dispatchEvent(new Event('load'));
 
-      // Breve accesibilidad: Enter para abrir portón
       enterBtn.addEventListener('keyup', (e)=>{ if(e.key === 'Enter') showcase.classList.add('open'); });
     });
-  </script></body>
+  </script>
+</body>
 </html>
